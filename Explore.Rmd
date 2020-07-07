@@ -16,7 +16,7 @@ library(knitr)
 ```
 
 ```{r load-data}
-airq <- read.csv("edited-2020-07-07.csv")
+airq <- read.csv("airqedited.csv")
 ```
 
 ```{r}
