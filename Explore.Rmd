@@ -1,0 +1,25 @@
+---
+title: "Explore"
+author: "Glen Morgenstern"
+date: "7/7/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r packages}
+library(tidyverse)
+library(dplyr)
+library(knitr)
+```
+
+```{r load-data}
+airq <- read.csv("Airq.csv")
+```
+
+```{r}
+ggplot(data=airq, aes(x=medi, y=vala)) + geom_point() + geom_smooth(method = "lm", se=FALSE)
+```
+
